@@ -1,0 +1,62 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:1:1-33:12
+INJECTED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:1:1-33:12
+	package
+		INJECTED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:1:11-69
+application
+ADDED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:3:5-31:19
+	android:appCategory
+		ADDED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:3:18-45
+	android:name
+		ADDED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:4:9-46
+meta-data#com.google.android.gms.car.application
+ADDED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:5:9-7:59
+	android:resource
+		ADDED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:7:13-56
+	android:name
+		ADDED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:6:13-66
+service#com.bely.androidmediaplayer.shared.MyMusicService
+ADDED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:12:9-18:19
+	android:exported
+		ADDED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:14:13-36
+	android:name
+		ADDED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:13:13-77
+intent-filter#action:name:android.media.browse.MediaBrowserService
+ADDED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:15:13-17:29
+action#android.media.browse.MediaBrowserService
+ADDED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:16:17-83
+	android:name
+		ADDED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:16:25-80
+activity#com.bely.androidmediaplayer.shared.LoginActivity
+ADDED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:19:9-22:39
+	android:exported
+		ADDED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:22:13-36
+	android:theme
+		ADDED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:21:13-51
+	android:name
+		ADDED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:20:13-42
+activity#com.bely.androidmediaplayer.shared.SettingActivity
+ADDED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:23:9-30:20
+	android:exported
+		ADDED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:26:13-36
+	android:theme
+		ADDED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:25:13-51
+	android:name
+		ADDED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:24:13-44
+intent-filter#action:name:android.intent.action.APPLICATION_PREFERENCES
+ADDED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:27:13-29:29
+action#android.intent.action.APPLICATION_PREFERENCES
+ADDED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:28:17-87
+	android:name
+		ADDED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:28:25-85
+uses-sdk
+INJECTED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml
+INJECTED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml

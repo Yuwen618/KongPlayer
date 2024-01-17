@@ -1,0 +1,64 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.bely.androidmediaplayer.shared" >
+4
+5    <uses-sdk android:minSdkVersion="28" />
+6
+7    <application
+7-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:3:5-31:19
+8        android:name="com.bely.androidmediaplayer.shared.KongPlayerApplication"
+8-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:4:9-46
+9        android:appCategory="audio" >
+9-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:3:18-45
+10        <meta-data
+10-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:5:9-7:59
+11            android:name="com.google.android.gms.car.application"
+11-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:6:13-66
+12            android:resource="@xml/automotive_app_desc" />
+12-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:7:13-56
+13
+14        <!--
+15         Main music service, provides media browsing and media playback services to
+16         consumers through MediaBrowserService and MediaSession. Consumers connect to it through
+17         MediaBrowser (for browsing) and MediaController (for playback control)
+18        -->
+19        <service
+19-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:12:9-18:19
+20            android:name="com.bely.androidmediaplayer.shared.MyMusicService"
+20-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:13:13-77
+21            android:exported="true" >
+21-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:14:13-36
+22            <intent-filter>
+22-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:15:13-17:29
+23                <action android:name="android.media.browse.MediaBrowserService" />
+23-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:16:17-83
+23-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:16:25-80
+24            </intent-filter>
+25        </service>
+26
+27        <activity
+27-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:19:9-22:39
+28            android:name="com.bely.androidmediaplayer.shared.LoginActivity"
+28-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:20:13-42
+29            android:exported="true"
+29-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:22:13-36
+30            android:theme="@style/Theme.AppCompat" />
+30-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:21:13-51
+31        <activity
+31-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:23:9-30:20
+32            android:name="com.bely.androidmediaplayer.shared.SettingActivity"
+32-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:24:13-44
+33            android:exported="true"
+33-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:26:13-36
+34            android:theme="@style/Theme.AppCompat" >
+34-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:25:13-51
+35            <intent-filter>
+35-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:27:13-29:29
+36                <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
+36-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:28:17-87
+36-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:28:25-85
+37            </intent-filter>
+38        </activity>
+39    </application>
+40
+41</manifest>
