@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.bely.androidmediaplayer"
+    namespace = "com.bely.kongplayer"
     compileSdk = 30
 
     defaultConfig {
-        applicationId = "com.bely.androidmediaplayer"
+        applicationId = "com.bely.kongplayer"
         minSdk = 28
         targetSdk = 30
         versionCode = 1

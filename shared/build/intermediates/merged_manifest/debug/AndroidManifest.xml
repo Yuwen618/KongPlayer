@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.bely.androidmediaplayer.shared" >
+    package="com.bely.kongplayer.shared" >
 
     <uses-sdk android:minSdkVersion="28" />
 
     <application
-        android:name="com.bely.androidmediaplayer.shared.KongPlayerApplication"
+        android:name="com.bely.kongplayer.shared.KongPlayerApplication"
         android:appCategory="audio" >
         <meta-data
             android:name="com.google.android.gms.car.application"
@@ -17,7 +17,7 @@
          MediaBrowser (for browsing) and MediaController (for playback control)
         -->
         <service
-            android:name="com.bely.androidmediaplayer.shared.MyMusicService"
+            android:name="com.bely.kongplayer.shared.MyMusicService"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.media.browse.MediaBrowserService" />
@@ -25,11 +25,11 @@
         </service>
 
         <activity
-            android:name="com.bely.androidmediaplayer.shared.LoginActivity"
+            android:name="com.bely.kongplayer.shared.LoginActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat" />
         <activity
-            android:name="com.bely.androidmediaplayer.shared.SettingActivity"
+            android:name="com.bely.kongplayer.shared.SettingActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat" >
             <intent-filter>

@@ -1,12 +1,12 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.bely.androidmediaplayer.shared" >
+3    package="com.bely.kongplayer.shared" >
 4
 5    <uses-sdk android:minSdkVersion="28" />
 6
 7    <application
 7-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:3:5-31:19
-8        android:name="com.bely.androidmediaplayer.shared.KongPlayerApplication"
+8        android:name="com.bely.kongplayer.shared.KongPlayerApplication"
 8-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:4:9-46
 9        android:appCategory="audio" >
 9-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:3:18-45
@@ -24,8 +24,8 @@
 18        -->
 19        <service
 19-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:12:9-18:19
-20            android:name="com.bely.androidmediaplayer.shared.MyMusicService"
-20-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:13:13-77
+20            android:name="com.bely.kongplayer.shared.MyMusicService"
+20-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:13:13-69
 21            android:exported="true" >
 21-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:14:13-36
 22            <intent-filter>
@@ -38,7 +38,7 @@
 26
 27        <activity
 27-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:19:9-22:39
-28            android:name="com.bely.androidmediaplayer.shared.LoginActivity"
+28            android:name="com.bely.kongplayer.shared.LoginActivity"
 28-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:20:13-42
 29            android:exported="true"
 29-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:22:13-36
@@ -46,7 +46,7 @@
 30-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:21:13-51
 31        <activity
 31-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:23:9-30:20
-32            android:name="com.bely.androidmediaplayer.shared.SettingActivity"
+32            android:name="com.bely.kongplayer.shared.SettingActivity"
 32-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:24:13-44
 33            android:exported="true"
 33-->E:\AndroidProjects\KongPlayer\shared\src\main\AndroidManifest.xml:26:13-36

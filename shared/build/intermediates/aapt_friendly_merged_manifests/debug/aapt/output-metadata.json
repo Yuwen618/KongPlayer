@@ -4,7 +4,7 @@
     "type": "AAPT_FRIENDLY_MERGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "com.bely.androidmediaplayer.shared",
+  "applicationId": "com.bely.kongplayer.shared",
   "variantName": "debug",
   "elements": [
     {

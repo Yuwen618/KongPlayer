@@ -15,7 +15,7 @@
         android:theme="@style/Theme.AndroidMediaPlayer" >
 
         <service
-            android:name="com.bely.androidmediaplayer.shared.MyMusicService"
+            android:name="com.bely.kongplayer.shared.MyMusicService"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.media.browse.MediaBrowserService" />

@@ -13,7 +13,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "AndroidMediaPlayer"
+rootProject.name = "KongPlayer"
 include(":mobile")
 include(":automotive")
 include(":shared")
