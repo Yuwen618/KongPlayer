@@ -12,6 +12,7 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable logo
 id button
+id button_login
 id checkBox_ACTION_FAST_FORWARD
 id checkBox_ACTION_PAUSE
 id checkBox_ACTION_PLAY
@@ -36,6 +37,7 @@ id errorpicker
 id groupIndicatorImageView
 id groupNameTextView
 id imageButton
+id imageButton2
 id layout_normalplay
 id textView
 id textView2

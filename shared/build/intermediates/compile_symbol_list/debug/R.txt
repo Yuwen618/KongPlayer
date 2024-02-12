@@ -11,6 +11,7 @@ int drawable ic_launcher_background 0x0
 int drawable ic_launcher_foreground 0x0
 int drawable logo 0x0
 int id button 0x0
+int id button_login 0x0
 int id checkBox_ACTION_FAST_FORWARD 0x0
 int id checkBox_ACTION_PAUSE 0x0
 int id checkBox_ACTION_PLAY 0x0
@@ -35,6 +36,7 @@ int id errorpicker 0x0
 int id groupIndicatorImageView 0x0
 int id groupNameTextView 0x0
 int id imageButton 0x0
+int id imageButton2 0x0
 int id layout_normalplay 0x0
 int id textView 0x0
 int id textView2 0x0

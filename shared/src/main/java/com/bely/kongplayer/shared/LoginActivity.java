@@ -23,4 +23,8 @@ public class LoginActivity extends AppCompatActivity {
         Utils.setNormalPlay(((CheckBox)findViewById(R.id.checkBox_success)).isChecked());
         finish();
     }
+
+    public void closeLoginScreen(View view) {
+        finish();
+    }
 }

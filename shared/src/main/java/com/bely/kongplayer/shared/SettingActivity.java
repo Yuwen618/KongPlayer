@@ -2,6 +2,7 @@ package com.bely.kongplayer.shared;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.media.session.PlaybackStateCompat;
 import android.text.Editable;
@@ -16,6 +17,7 @@ import java.util.HashMap;
 public class SettingActivity extends AppCompatActivity {
 
     CheckBox mCheckBox_NormalPlay;
+    CheckBox mCheckBox_supportBrowse;
     CheckBox mCheckBox_Browsable;
     EditText mCustomButtonNum;
     EditText mQueueListSize;
@@ -49,6 +51,7 @@ public class SettingActivity extends AppCompatActivity {
 
     private void initViews() {
         mCheckBox_NormalPlay = findViewById(R.id.checkBox_normal_play);
+        mCheckBox_supportBrowse = findViewById(R.id.checkBox_browsable);
         mCustomButtonNum = findViewById(R.id.editText_custom_button_number);
         mQueueListSize = findViewById(R.id.editText_queue_number);
         mErrorCodePicker = findViewById(R.id.errorpicker);
@@ -79,6 +82,7 @@ public class SettingActivity extends AppCompatActivity {
         mCheckBox_NormalPlay.setChecked(Utils.isNormalPlay());
         mQueueListSize.setEnabled(Utils.isNormalPlay());
         mCustomButtonNum.setEnabled(Utils.isNormalPlay());
+        mCheckBox_Browsable.setChecked(Utils.isSupportBrowse());
         for (Integer key : mActionList.keySet()) {
             findViewById(key).setEnabled(Utils.isNormalPlay());
         }
@@ -103,6 +107,7 @@ public class SettingActivity extends AppCompatActivity {
 
     public void onClose(View view) {
         Utils.setNormalPlay(mCheckBox_NormalPlay.isChecked());
+        Utils.setSupportBrowse(mCheckBox_supportBrowse.isChecked());
         if (!Utils.isNormalPlay()) {
             Utils.setCustomButtonNumber(0);
             Utils.setActions(0);
@@ -131,5 +136,11 @@ public class SettingActivity extends AppCompatActivity {
 
         super.onStop();
         onClose(null);
+    }
+
+    public void onOpenLogin(View view) {
+        Intent intent = new Intent();
+        intent.setClass(this, LoginActivity.class);
+        startActivity(intent);
     }
 }

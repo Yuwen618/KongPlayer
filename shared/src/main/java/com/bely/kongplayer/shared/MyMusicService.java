@@ -98,6 +98,7 @@ public class MyMusicService extends MediaBrowserServiceCompat {
     private Handler.Callback mMsgHandlerCallback = message -> {
         switch(message.what) {
             case Constants.MSG_ACTION_PLAY:
+                mSession.setActive(true);
                 if (Utils.isNormalPlay()) {
                     mPlayer.startPlay();
                 } else {
@@ -108,6 +109,7 @@ public class MyMusicService extends MediaBrowserServiceCompat {
                 mPlayer.pause();
                 break;
             case Constants.MSG_ACTION_STOP:
+                mSession.setActive(false);
                 mPlayer.stop();
                 break;
             case Constants.MSG_ACTION_SET_ERROR_STATE:
@@ -126,6 +128,7 @@ public class MyMusicService extends MediaBrowserServiceCompat {
 
     @Override
     public void onDestroy() {
+        mSession.setActive(false);
         mSession.release();
         mPlayer.stop();
     }
@@ -140,13 +143,17 @@ public class MyMusicService extends MediaBrowserServiceCompat {
     @Override
     public void onLoadChildren(@NonNull final String parentMediaId,
                                @NonNull final Result<List<MediaItem>> result) {
-        //result.sendResult(new ArrayList<MediaItem>());
-        BrowseListProvider.loadChildrenImpl_Testing(parentMediaId, result);
+        if (!Utils.isSupportBrowse()) {
+            result.sendResult(new ArrayList<MediaItem>());
+        } else {
+            BrowseListProvider.loadChildrenImpl_Testing(parentMediaId, result);
+        }
     }
 
     private final class MediaSessionCallback extends MediaSessionCompat.Callback {
         @Override
         public void onPlay() {
+            mSession.setActive(true);
             if (Utils.isNormalPlay()) {
                 mPlayer.startPlay();
             } else {
@@ -174,6 +181,7 @@ public class MyMusicService extends MediaBrowserServiceCompat {
 
         @Override
         public void onStop() {
+            mSession.setActive(false);
             mPlayer.stop();
         }
 

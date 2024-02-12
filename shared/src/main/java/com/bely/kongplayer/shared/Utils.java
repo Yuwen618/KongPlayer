@@ -15,12 +15,20 @@ public class Utils {
     private static int mCustomButtonNumber = 0;
     private static int mQueueListSize = 10;
     private static int mErrorCode = PlaybackStateCompat.ERROR_CODE_AUTHENTICATION_EXPIRED;
+    private static boolean mSupportBrowse = true;
     private static String mErrorMsg = "ERROR_CODE_AUTHENTICATION_EXPIRED";
 
     private static long mActions = 0;
 
     private static Handler mServiceHandler;
 
+    public static boolean isSupportBrowse() {
+        return mSupportBrowse;
+    }
+
+    public static void setSupportBrowse(boolean support) {
+        mSupportBrowse = support;
+    }
     public static boolean isNormalPlay() {
         return mNormalPlay;
     }

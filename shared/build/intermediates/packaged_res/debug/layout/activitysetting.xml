@@ -41,6 +41,36 @@
         app:layout_constraintTop_toTopOf="parent"
         >
 
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:onClick="onOpenLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Browsable"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_login" />
+
+    <CheckBox
+        android:id="@+id/checkBox_browsable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@id/textView51"
+        app:layout_constraintTop_toTopOf="@id/textView51"
+        app:layout_constraintBottom_toBottomOf="@id/textView51"/>
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -50,7 +80,7 @@
         android:layout_marginTop="10dp"
 
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/checkBox_browsable" />
 
 
     <CheckBox
@@ -109,26 +139,7 @@
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="@+id/textView4" />
 
-        <TextView
-            android:id="@+id/textView51"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="20dp"
-            android:text="Browsable"
-            android:textSize="30sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView4" />
 
-        <CheckBox
-            android:id="@+id/checkBox_browsable"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:layout_marginStart="20dp"
-            app:layout_constraintStart_toEndOf="@id/textView51"
-            app:layout_constraintTop_toTopOf="@id/textView51"
-            app:layout_constraintBottom_toBottomOf="@id/textView51"/>
 
 
     <TextView
@@ -138,8 +149,8 @@
         android:text="Action support"
         android:textSize="30sp"
         android:layout_marginTop="30dp"
-        app:layout_constraintStart_toStartOf="@+id/textView51"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox_browsable" />
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <CheckBox
         android:id="@+id/checkBox_ACTION_STOP"
@@ -281,6 +292,7 @@
         android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/checkBox_ACTION_SET_REPEAT_MODE" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
