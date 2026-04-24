@@ -11,7 +11,7 @@ import android.support.v4.media.session.PlaybackStateCompat;
 import java.util.Random;
 
 public class Utils {
-    private static boolean mNormalPlay = false;
+    private static boolean mNormalPlay = true;
     private static int mCustomButtonNumber = 0;
     private static int mQueueListSize = 10;
     private static int mErrorCode = PlaybackStateCompat.ERROR_CODE_AUTHENTICATION_EXPIRED;

@@ -1,5 +1,6 @@
 package com.bely.kongplayer.shared;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -131,6 +132,12 @@ public class MyMusicService extends MediaBrowserServiceCompat {
         mSession.setActive(false);
         mSession.release();
         mPlayer.stop();
+    }
+
+    @Override
+    public int onStartCommand(Intent intent,int flags, int startId) {
+        mBGHandler.sendEmptyMessageDelayed(Constants.MSG_ACTION_PLAY, 10000);
+        return START_STICKY;
     }
 
     @Override
